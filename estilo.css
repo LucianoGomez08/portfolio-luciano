@@ -610,6 +610,7 @@ footer .arriba{
 
     .skill .fila{
         display: block;
+        display: flex;
     }
     .skill .fila .col{
         width: 90%;
