@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio / Luciano Gomez</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#">Luciano</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Professional Skills</a></li>
+                    <li><a href="#skill" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#proyectos" onclick="seleccionar()">Proyectos</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="img/hero.jpeg" alt="">
+            </div>
+            <h1>Luciano Gómez</h1>
+            <h2>Analista de Sistemas</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/luciano-g%C3%B3mez-hern%C3%A1n/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@lucianogomez882"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://github.com/LucianoGomez08"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Luciano Gómez.</span> tengo 24 años y soy Analista de Sistemas egresado del Instituto Tecnológico Beltrán. Me apasiona la tecnología y me interesa especialmente el desarrollo tanto front-end como back-end. Disfruto trabajar en equipo, ayudar a los demás y aprender constantemente para seguir creciendo en el mundo IT.</p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Fecha de nacimiento</strong>
+                            08-11-2000
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            1135734319
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            luciano.gomez.hernan08@gmail.com
+                        </li>
+                        <li>
+                            <strong>Dirección</strong>
+                            Lanus Este, Argentina
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <button onclick="descargarCV()">
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Professional Skills</h2>
+            <div class="fila">
+                <!-- Professional Skills -->
+                <div class="col">
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- SECCION Skills -->
+    <section id="skill" class="skill">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                    <div class="item">
+                        <img src="img/html.png" alt="">
+                    </div>
+                    <div class="item">
+                        <img src="img/css3.png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="img/python.png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="img/java.jpg" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="img/lenguajec.png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="img/php.png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="img/basededatos.png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="img/angular.png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="img/git.png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="img/GitHub-Mark.png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="img/bootstrap.png" alt="" srcset="">
+                    </div>
+                    <div class="item">
+                        <img src="img/js.png" alt="" srcset="">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="proyectos" class="proyectos">
+        <div class="contenido-seccion">
+            <h2>Proyectos</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <a href="https://github.com/LucianoGomez08/proyecto_integrador">
+                        <img src="img/proyecto 1.png" alt="">
+                        <div class="overlay">
+                            <h3>Gestion Departamento de Alumnos</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/LucianoGomez08/crud_concesionaria">
+                        <img src="img/proyecto 2.png" alt="">
+                        <div class="overlay">
+                            <h3>Crud Concesionaria</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="proyecto">
+                    <a href="https://github.com/LucianoGomez08/cafeteria_login">
+                        <img src="img/proyecto 3.png" alt="">
+                        <div class="overlay">
+                            <h3>Diseño web de cafeteria</h3>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
